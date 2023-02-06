@@ -13,7 +13,7 @@ order: 1
 
 Security consulting removes potential threats and protects data.
 
-We mainly conduct research on vulnerabilities in our customers' software and services.
+We mainly conduct research on vulnerabilities in our customer's software and services.
 
 Research suggests countermeasures to prevent and prevent security threats and accidents. 
 
