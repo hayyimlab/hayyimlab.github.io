@@ -11,4 +11,3 @@ We mainly conduct research on vulnerabilities in our customers' software and ser
 Research suggests countermeasures to prevent and prevent security threats and accidents. 
 
 > *More about us? [This Page](https://hayyimlab.oopy.io)*
-{: .prompt-tip }
