@@ -28,3 +28,4 @@ if RUBY_PLATFORM =~ /linux-musl/
 end
 
 gem "webrick", "~> 1.7"
+
