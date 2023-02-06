@@ -4,5 +4,5 @@ icon: fas fa-envelope
 order: 2
 ---
 
-> Contact: [contact@hayyimsecurity.com](mailto:grypwn@gmail.com)
+> Contact: [contact@hayyimsecurity.com](mailto:contact@hayyimsecurity.com)
 {: .prompt-tip }
