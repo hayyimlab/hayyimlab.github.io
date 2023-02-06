@@ -222,7 +222,7 @@ x86 프로세서의 instruction set을 철저히 스캔하는 소프트웨어 �
 
 <br>
 
-*수정 사항, 보충 사항은 dominic2009@snu.ac.kr로 제보 바랍니다.*
+*수정 및 보충 사항은 [dominic2009@snu.ac.kr](mailto:dominic2009@snu.ac.kr)로 제보 바랍니다.*
 
 ---
 
