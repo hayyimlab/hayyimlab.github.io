@@ -21,16 +21,16 @@ timezone: Asia/Seoul
 
 title: Hayyim Security                          # the main title
 
-tagline: A text-focused Jekyll theme   # it will display as the sub-title
+tagline: Hayyim Security Research Blog   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
-  A minimal, responsive, and powerful Jekyll theme for presenting professional writing.
+  🙌🏻 Welcome to Hayyim Security Research Blog.
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: ''
 
 github:
-  username: Hayyim Security             # change to your github username
+  username: hayyimlab             # change to your github username
 
 twitter:
   username: hayyim_lab           # change to your twitter username
@@ -39,7 +39,7 @@ social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
   name: Hayyim Security
-  email: info@hayyimsecurity.com             # change to your email address
+  email: contact@hayyimsecurity.com             # change to your email address
   links:
     # The first element serves as the copyright owner's link
     - https://twitter.com/hayyim_lab      # change to your twitter homepage

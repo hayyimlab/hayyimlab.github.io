@@ -1,8 +1,8 @@
 ---
 # the default layout is 'page'
 icon: fas fa-envelope
-order: 5
+order: 2
 ---
 
-> Contact: [info@hayyimsecurity.com](mailto:grypwn@gmail.com)
+> Contact: [contact@hayyimsecurity.com](mailto:grypwn@gmail.com)
 {: .prompt-tip }
