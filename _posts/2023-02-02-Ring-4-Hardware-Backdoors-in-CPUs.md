@@ -60,7 +60,9 @@ author: "Donghyun"
 
 US8880851에 따르면 프로세서는 RISC core를 활성화하기 위해 MSR로 x86 core에 노출된 *global configuration register*를 사용합니다. RISC core가 활성화되면 RISC instruction sequence는 x86 instruction set에 추가된 새로운 instruction인 x86 *launch instruction으*로 시작됩니다.
 
-Integrated execution pipeline과 shared register file을 포함한 *DEC*의 설계는 Intel ME나 AMD PSP와 같은 coprocessor보다 더 은밀하고 강력합니다. Protected memory를 수정할 수 있는 다른 coprocessor들은 kernel, hypervisor, system management mode의 능력을 능가하는 'ring -3' layer of privilege로 불려왔습니다. 이에 본 연구는 *DEC*가 지금까지 발견된 가장 깊은 layer인 일종의 'ring -4'로 작용한다고 제안합니다.
+Integrated execution pipeline과 shared register file을 포함한 *DEC*의 설계는 Intel ME나 AMD PSP와 같은 coprocessor보다 더 은밀하고 강력합니다. Protected memory를 수정할 수 있는 coprocessor들은 kernel, hypervisor, System Management Mode의 능력을 능가하는 'ring -3' layer of privilege로 불려왔습니다. 이에 본 연구는 *DEC*가 지금까지 발견된 가장 깊은 layer인 일종의 'ring -4'로 작용한다고 제안합니다.
+
+![IA negative rings](/assets/upload/2023-02-02-Ring-4-Hardware-Backdoors-in-CPUs/IA negative rings.png){: width="600" }
 
 *DEC*에 대한 가정이 맞는다면, *DEC*는 프로세서에서 일종의 백도어로 사용되어 가장 중요한 프로세서 보안 검사를 모두 은밀하게 우회할 수 있습니다; 우리는 이것을 *rosenbridge* backdoor라고 부릅니다.
 
