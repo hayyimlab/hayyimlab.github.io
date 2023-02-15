@@ -3,9 +3,9 @@ title: "Ring -4?: Hardware Backdoors in CPUs"
 date: 2023-02-02 13:00:00 +0900
 author: "Donghyun"
 tags: [research, rosenbridge, sandsifter, nightshyft, hardware backdoor, negative ring, god mode]
+image:
+  path: /assets/upload/2023-02-02-Ring-4-Hardware-Backdoors-in-CPUs/The Big Hack.jpg
 ---
-
-<meta property="og:image" content="https://blog.hayyimsecurity.com/assets/upload/2023-02-02-Ring-4-Hardware-Backdoors-in-CPUs/2023-02-02-Ring-4-Hardware-Backdoors-in-CPUs-Thumbnail.png">
 
 # Intro
 
