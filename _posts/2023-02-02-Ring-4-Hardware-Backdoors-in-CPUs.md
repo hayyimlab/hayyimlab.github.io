@@ -5,6 +5,8 @@ author: "Donghyun"
 tags: [research, rosenbridge, sandsifter, nightshyft, hardware backdoor, negative ring, god mode]
 ---
 
+<meta property="og:image" content="/assets/upload/2023-02-02-Ring-4-Hardware-Backdoors-in-CPUs/2023-02-02-Ring-4-Hardware-Backdoors-in-CPUs-Thumbnail.png">
+
 # Intro
 
 지난여름, 하임시큐리티 내부 세미나에서 박서빈(moonoik) 선임 연구원님이 한때 뜨거운 감자였던 [프로세서 취약점](https://meltdownattack.com/)에 대한 대응으로 제시된 당시 Intel, AMD 등의 microcode 보안 업데이트를 필두로, 하드웨어 백도어에 대한 내용을 발표했습니다. 발표를 들었을 때도 크게 흥미를 느꼈지만 회사 일이 한창 바쁠 때라 우선순위에서 밀렸었는데, 연초에 개인 연구 시간이 일부 주어져 조금은 여유롭게 관련 연구를 살펴보았습니다.
