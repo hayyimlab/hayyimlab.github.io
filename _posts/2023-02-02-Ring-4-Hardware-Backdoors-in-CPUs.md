@@ -1,3 +1,9 @@
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://metatags.io/">
+<meta property="og:title" content="Ring -4?: Hardware Backdoors in CPUs | Hayyim Security">
+<meta property="og:description" content="Intro">
+<meta property="og:image" content="https://blog.hayyimsecurity.com/assets/upload/2023-02-02-Ring-4-Hardware-Backdoors-in-CPUs/The%20Big%20Hack.jpg">
+
 ---
 title: "Ring -4?: Hardware Backdoors in CPUs"
 date: 2023-02-02 13:00:00 +0900
