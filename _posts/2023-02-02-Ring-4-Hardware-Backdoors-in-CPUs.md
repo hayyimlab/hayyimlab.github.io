@@ -5,6 +5,8 @@ author: "Donghyun"
 tags: [research, rosenbridge, sandsifter, nightshyft, hardware backdoor, negative ring, god mode]
 image: 
     path: "/assets/upload/2023-02-02-Ring-4-Hardware-Backdoors-in-CPUs/The Big Hack.jpg"
+    width: 1
+    height: 1
 ---
 
 # Intro
