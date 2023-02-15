@@ -5,10 +5,6 @@ author: "Donghyun"
 tags: [research, rosenbridge, sandsifter, nightshyft, hardware backdoor, negative ring, god mode]
 ---
 
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://blog.hayyimsecurity.com/posts/Ring-4-Hardware-Backdoors-in-CPUs/">
-<meta property="og:title" content="Ring -4?: Hardware Backdoors in CPUs | Hayyim Security">
-<meta property="og:description" content="🙌🏻 Welcome to Hayyim Security Research Blog .">
 <meta property="og:image" content="https://blog.hayyimsecurity.com/assets/upload/2023-02-02-Ring-4-Hardware-Backdoors-in-CPUs/2023-02-02-Ring-4-Hardware-Backdoors-in-CPUs-Thumbnail.png">
 
 # Intro
