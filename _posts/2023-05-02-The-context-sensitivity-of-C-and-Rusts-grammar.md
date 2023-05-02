@@ -9,7 +9,7 @@ toc: true
 
 [Context-free grammar(CFG)](https://en.wikipedia.org/wiki/Context-free_grammar)는 프로그래밍 언어의 코드를 parsing 하는 데에 유용한 이론적 도구로 쓰입니다. 일례로, parsing 도구 중 하나인 [Yacc](http://en.wikipedia.org/wiki/Yacc)는 CFG용 parser를 생성합니다. 그러나 실제로는 다수의 프로그래밍 언어가 context-free 하지 않은 문법을 가집니다.
 
-# Cqwerqwer
+# C
 
 C는 널리 사용되는 언어 중 하나이며 *거의* context-free 한 문법을 가져 위 내용을 설명하기 좋은 예입니다.
 
