@@ -1,7 +1,9 @@
 ---
 title: The context sensitivity of C and Rust's grammar
-author: "Donghyun Lee(donghyunlee00)"
+author: "Donghyun"
 tags: [cfg, context-free, context-sensitive, context-free language, regular language, programming language, parsing, parser, raw string literal, pumping lemma, ambiguity]
+math: true
+
 ---
 
 *기초 이론에 대한 지식을 가정하고 작성하였습니다.
@@ -123,7 +125,7 @@ $R'$가 context-free 하지 않으므로 Rust의 raw string literal 또한 conte
 
 
 
-*수정 및 보충 사항은 dominic2009@snu.ac.kr로 제보 바랍니다.*
+*수정 및 보충 사항은 [dominic2009@snu.ac.kr](mailto:dominic2009@snu.ac.kr)로 제보 바랍니다.*
 
 ---
 
