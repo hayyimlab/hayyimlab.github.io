@@ -2,6 +2,7 @@
 title: The context sensitivity of C and Rust's grammar
 author: "Donghyun"
 tags: [cfg, context-free, context-sensitive, context-free language, regular language, programming language, parsing, parser, raw string literal, pumping lemma, ambiguity]
+
 ---
 
 *기초 이론에 대한 지식을 가정하고 작성하였습니다.
@@ -117,9 +118,9 @@ e.g. for `p = 2`: `s = r##""#"##`
 
 # References
 
-- https://eli.thegreenplace.net/2007/11/24/the-context-sensitivity-of-cs-grammar
-- https://github.com/rust-lang/rust/blob/cb8ab33ed29544973da866bdc3eff509b3c3e789/src/grammar/raw-string-literal-ambiguity.md
-- https://matklad.github.io/2018/06/06/modern-parser-generator.html
+- [https://eli.thegreenplace.net/2007/11/24/the-context-sensitivity-of-cs-grammar](https://eli.thegreenplace.net/2007/11/24/the-context-sensitivity-of-cs-grammar)
+- [https://github.com/rust-lang/rust/blob/cb8ab33ed29544973da866bdc3eff509b3c3e789/src/grammar/raw-string-literal-ambiguity.md](https://github.com/rust-lang/rust/blob/cb8ab33ed29544973da866bdc3eff509b3c3e789/src/grammar/raw-string-literal-ambiguity.md)
+- [https://matklad.github.io/2018/06/06/modern-parser-generator.html](https://matklad.github.io/2018/06/06/modern-parser-generator.html)
 
 
 
