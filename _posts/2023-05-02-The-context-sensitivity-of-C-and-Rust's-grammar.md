@@ -43,7 +43,7 @@ CFG는 형식 언어 및 프로그래밍 언어와 관련하여 다양한 방식
 func((T) * x);
 ```
 
-`T`가 type이면 x를 역참조한 결과가 `T`로 형변환되어 `func`에 전달됩니다. `T`가 type이 아니면 `T`와 `x`의 곱셈이 `func`에 전달됩니다.
+`T`가 type이면 `x`를 역참조한 결과가 `T`로 형변환되어 `func`에 전달됩니다. `T`가 type이 아니면 `T`와 `x`의 곱셈이 `func`에 전달됩니다.
 
 위 모든 예에서, 문제를 유발할 수 있는 부분에 도달하기 전에 코드에서 context-sensitive information을 수집하지 않으면 parser는 정상적으로 작동하지 못합니다. 이 문제는 compilation/C 커뮤니티에서 "typedef-name: identifier" 문제로 불립니다. K&R2[^2]도 부록에서 C의 문법을 제시할 때 이를 언급합니다:
 
