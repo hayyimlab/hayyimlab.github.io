@@ -97,15 +97,15 @@ B : ε
 
 Rust의 string literal이 context-free 하지 않음을 증명하기 위해 context-free language가 regular language와의 교집합에 대해 닫혀 있다는 사실과 [context-free language에 대한 pumping lemma](https://en.wikipedia.org/wiki/Pumping_lemma_for_context-free_languages)를 사용할 것입니다.
 
-Regular language $R = r\#+""\#*"\#+$를 생각해 봅시다. Rust의 raw string literal이 context-free 하면, raw string literal과 $R$의 교집합인 $R'$ 역시 context-free 해야 합니다. 따라서 raw string literal이 context-free 하지 않음을 증명하려면 $R'$이 context-free 하지 않음을 증명하면 됩니다.
+Regular language $R = r\\#+""\\#*"\\#+$를 생각해 봅시다. Rust의 raw string literal이 context-free 하면, raw string literal과 $R$의 교집합인 $R'$ 역시 context-free 해야 합니다. 따라서 raw string literal이 context-free 하지 않음을 증명하려면 $R'$이 context-free 하지 않음을 증명하면 됩니다.
 
-$R'$은 $\{r\#^n""\#^m"\#^n | m < n\}$입니다.
+$R'$은 $\{r\\#^n""\\#^m"\\#^n | m < n\}$입니다.
 
 $R'$이 context-free 하다고 가정합시다. 그러면 $R'$은 pumping lemma가 적용되는 pumping length $p > 0$를 가집니다. $R'$에서 다음 문자열 $s$를 생각해 봅시다:
-$$
-r\#^p""\#^{p-1}"\#^p
-$$
-e.g. for $p = 2$: $s = r\#\#""\#"\#\#$
+
+$$ r\\#^p""\\#^{p-1}"\\#^p $$
+
+e.g. for $p = 2$: $s = r\\#\\#""\\#"\\#\\#$
 
 아래 조건을 만족시키도록 $s = uvwxy$와 같이 분할할 수 있습니다.
 
