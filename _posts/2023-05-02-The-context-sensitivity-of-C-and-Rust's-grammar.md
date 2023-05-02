@@ -2,8 +2,6 @@
 title: The context sensitivity of C and Rust's grammar
 author: "Donghyun"
 tags: [cfg, context-free, context-sensitive, context-free language, regular language, programming language, parsing, parser, raw string literal, pumping lemma, ambiguity]
-math: true
-
 ---
 
 *기초 이론에 대한 지식을 가정하고 작성하였습니다.
@@ -97,25 +95,25 @@ B : ε
 
 Rust의 string literal이 context-free 하지 않음을 증명하기 위해 context-free language가 regular language와의 교집합에 대해 닫혀 있다는 사실과 [context-free language에 대한 pumping lemma](https://en.wikipedia.org/wiki/Pumping_lemma_for_context-free_languages)를 사용할 것입니다.
 
-Regular language $R = r\\#+""\\#*"\\#+$를 생각해 봅시다. Rust의 raw string literal이 context-free 하면, raw string literal과 $R$의 교집합인 $R'$ 역시 context-free 해야 합니다. 따라서 raw string literal이 context-free 하지 않음을 증명하려면 $R'$이 context-free 하지 않음을 증명하면 됩니다.
+Regular language `R = r#+""#*"#+`를 생각해 봅시다. Rust의 raw string literal이 context-free 하면, raw string literal과 `R`의 교집합인 `R'` 역시 context-free 해야 합니다. 따라서 raw string literal이 context-free 하지 않음을 증명하려면 `R'`이 context-free 하지 않음을 증명하면 됩니다.
 
-$R'$은 $\{r\\#^n""\\#^m"\\#^n | m < n\}$입니다.
+`R'`은 `{r#^n""#^m"#^n | m < n}`입니다.
 
-$R'$이 context-free 하다고 가정합시다. 그러면 $R'$은 pumping lemma가 적용되는 pumping length $p > 0$를 가집니다. $R'$에서 다음 문자열 $s$를 생각해 봅시다:
+`R'`이 context-free 하다고 가정합시다. 그러면 `R'`은 pumping lemma가 적용되는 pumping length `p > 0`를 가집니다. `R'`에서 다음 문자열 `s`를 생각해 봅시다:
 
-$$ r\\#^p""\\#^{p-1}"\\#^p $$
+`` r#^p""#^{p-1}"#^p ``
 
-e.g. for $p = 2$: $s = r\\#\\#""\\#"\\#\\#$
+e.g. for `p = 2`: `s = r##""#"##`
 
-아래 조건을 만족시키도록 $s = uvwxy$와 같이 분할할 수 있습니다.
+아래 조건을 만족시키도록 `s = uvwxy`와 같이 분할할 수 있습니다.
 
-- $|vx| \ge 1$
-- $|vwx| \le p$
-- $uv^iwx^iy \in R'$ for all $i \ge 0$
+- `|vx| ≥ 1`
+- `|vwx| ≤ p`
+- `uv^iwx^iy ∈ R'` for all `i ≥ 0`
 
-$R'$의 모든 문자열에서 $"$와 $r$의 수는 고정돼 있으므로 $v$와 $x$ 모두 $"$ 또는 $r$을 포함할 수 없습니다. 따라서 $v$와 $x$는 hash만 포함합니다. 결과적으로, 세 개의 hash sequence 중 $v$와 $x$를 합친 것은 그중 두 개만 pumping 할 수 있습니다. 만약 중앙 hash sequence를 선택하면 pumping 시 외부 sequence 중 하나가 증가하지 않아 외부 sequence 간의 불균형이 발생합니다. 따라서 두 외부 hash sequence를 모두 pumping 해야 합니다. 그러나 이 두 hash sequence 사이에는 $p + 2$개의 문자가 존재하며, $|vwx|$는 $p$보다 작거나 같아야 합니다. 여기서 모순이 발생하여 $R'$이 context-free 하지 않음이 도출됩니다.
+`R'`의 모든 문자열에서 `"`와 `r`의 수는 고정돼 있으므로 `v`와 `x` 모두 `"` 또는 `r`을 포함할 수 없습니다. 따라서 `v`와 `x`는 hash만 포함합니다. 결과적으로, 세 개의 hash sequence 중 `v`와 `x`를 합친 것은 그중 두 개만 pumping 할 수 있습니다. 만약 중앙 hash sequence를 선택하면 pumping 시 외부 sequence 중 하나가 증가하지 않아 외부 sequence 간의 불균형이 발생합니다. 따라서 두 외부 hash sequence를 모두 pumping 해야 합니다. 그러나 이 두 hash sequence 사이에는 `p + 2`개의 문자가 존재하며, `|vwx|`는 `p`보다 작거나 같아야 합니다. 여기서 모순이 발생하여 `R'`이 context-free 하지 않음이 도출됩니다.
 
-$R'$가 context-free 하지 않으므로 Rust의 raw string literal 또한 context-free 하지 않습니다.
+`R'`가 context-free 하지 않으므로 Rust의 raw string literal 또한 context-free 하지 않습니다.
 
 # References
 
