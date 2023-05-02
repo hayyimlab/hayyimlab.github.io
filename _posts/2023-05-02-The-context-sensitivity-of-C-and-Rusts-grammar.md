@@ -2,6 +2,7 @@
 title: The context sensitivity of C and Rust's grammar
 author: "Donghyun"
 tags: [cfg, context-free, context-sensitive, context-free language, regular language, programming language, parsing, parser, raw string literal, pumping lemma, ambiguity]
+toc: true
 ---
 
 # Context-free grammar
