@@ -5,11 +5,11 @@ tags: [cfg, context-free, context-sensitive, context-free language, regular lang
 toc: true
 ---
 
-# Context-free grammar
+## Context-free grammar
 
 [Context-free grammar(CFG)](https://en.wikipedia.org/wiki/Context-free_grammar)는 프로그래밍 언어의 코드를 parsing 하는 데에 유용한 이론적 도구로 쓰입니다. 일례로, parsing 도구 중 하나인 [Yacc](http://en.wikipedia.org/wiki/Yacc)는 CFG용 parser를 생성합니다. 그러나 실제로는 다수의 프로그래밍 언어가 context-free 하지 않은 문법을 가집니다.
 
-# C
+## C
 
 C는 널리 사용되는 언어 중 하나이며 *거의* context-free 한 문법을 가져 위 내용을 설명하기 좋은 예입니다.
 
@@ -66,7 +66,7 @@ identifier ([a-zA-Z_][0-9a-zA-Z_]*)
 
 여기서 Lex의 syntax를 자세히 설명하지 않더라도, 이것이 기본적으로 말하는 것은 identifier가 발견될 때마다 해당 identifier가 type인지 확인한다는 것입니다. Type이면 `TYPEDEFname` token이 반환되고, type이 아니면 `IDENTIFIER`가 반환됩니다. Yacc 문법에서 이 둘은 별도의 terminal입니다.
 
-# Rust
+## Rust
 
 Rust의 lexical 문법은 context-free 하지 않습니다. [Raw string literal](https://doc.rust-lang.org/stable/reference/tokens.html#raw-string-literals)이 그 원인입니다. Raw string literal은 `r`에 이은 N개의 hash(N은 0일 수 있음), 따옴표, 임의의 문자들, 따옴표 그리고 N개의 hash로 구성됩니다. 중요한 것은 첫 번째 따옴표 쌍 안에 다른 따옴표가 들어오면 그 뒤에 N개의 hash가 연속적으로 올 수 없다는 것입니다. 가령, `r###""###"###`은 유효하지 않습니다.
 
@@ -114,7 +114,7 @@ e.g. for `p = 2`: `s = r##""#"##`
 
 `R'`가 context-free 하지 않으므로 Rust의 raw string literal 또한 context-free 하지 않습니다.
 
-# References
+## References
 
 - [https://eli.thegreenplace.net/2007/11/24/the-context-sensitivity-of-cs-grammar](https://eli.thegreenplace.net/2007/11/24/the-context-sensitivity-of-cs-grammar)
 - [https://github.com/rust-lang/rust/blob/cb8ab33ed29544973da866bdc3eff509b3c3e789/src/grammar/raw-string-literal-ambiguity.md](https://github.com/rust-lang/rust/blob/cb8ab33ed29544973da866bdc3eff509b3c3e789/src/grammar/raw-string-literal-ambiguity.md)
